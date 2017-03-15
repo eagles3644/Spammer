@@ -1,0 +1,7 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_title_confirm_account">Confirm Sender Account Before Sending</string>
+    <string name="pref_title_send_progress_notification">Show Send Progress Notification</string>
+    <string name="pref_title_sent_notification">Show Sent Notification</string>
+    <string name="pref_title_24_hour_clock">Show Time in 24-hour Format</string>
+</resources>

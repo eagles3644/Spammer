@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="colorAccent">@color/my_accent_color</item>
+        <item name="dialogTheme">@style/SettingsActivityTheme</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="SettingsActivityTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/my_accent_color</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@drawable/custom_actionbar_background</item>
+    </style>
+
+</resources>

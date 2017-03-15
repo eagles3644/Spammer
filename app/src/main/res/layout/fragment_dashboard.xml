@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.spammerapp.spammer.DashboardFragment">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/dashAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6909068111618447/5679525813"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dashAdView"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/dashIcon"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_hello_spammer" />
+
+        <TextView
+            android:id="@+id/dashCounterLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dashIcon"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/spam_sent"
+            android:paddingBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/dashCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dashCounterLabel"
+            android:textSize="80sp"
+            android:text="@string/counter_default"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/dashAdView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6909068111618447/5679525813"/>
+
+        <ImageButton
+            android:layout_margin="15dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@id/dashAdView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/ic_dialog_email"
+            android:background="@drawable/fab"
+            android:id="@+id/dashFAB"
+            android:layout_gravity="end|bottom"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

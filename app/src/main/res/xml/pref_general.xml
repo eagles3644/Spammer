@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="confirm_account"
+        android:summary="@string/pref_title_confirm_account"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="send_notif"
+        android:summary="@string/pref_title_send_progress_notification"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="sent_notif"
+        android:summary="@string/pref_title_sent_notification"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="24_hour"
+        android:summary="@string/pref_title_24_hour_clock"
+        android:defaultValue="false" />
+
+</PreferenceScreen>
